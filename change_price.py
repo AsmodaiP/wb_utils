@@ -18,7 +18,7 @@ def get_info_current_price(article):
         response = requests.get(url, headers=headers, params={'quantity': 0})
         for info in response.json():
             if info['nmId'] == article:
-                info['Цена после скидок'] = int(info['price']*(1-info['discount']*0.01- info['promoCode']*0.01))
+                info['Цена после скидок'] = int(info['price']*(1-info['discount']*0.01) * (1- info['promoCode']*0.01))
                 return info
 
 

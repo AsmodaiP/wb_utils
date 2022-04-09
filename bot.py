@@ -59,7 +59,7 @@ def get_current_info(bot, update):
         bot.message.reply_text('Артикул не найден')
         return ConversationHandler.END
     update.user_data['article'] = article
-    bot.message.reply_text(f'Текущая цена {info["price"]},\n Cкидка {info["discount"]} \n Промокод {info["promoCode"]}')
+    bot.message.reply_text(f'Текущая цена {info["price"]},\n Cкидка {info["discount"]} \n Промокод {info["promoCode"]} \n Окончательная цена {info["Цена после скидок"]}')
     bot.message.reply_text('Введите новую цену или отмените операцию', reply_markup=CANCEL_MARKUP)
     return 'change_price'
 
