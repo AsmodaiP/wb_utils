@@ -66,10 +66,10 @@ def get_current_info(bot, update):
     return 'change_price'
 
 def change_price_by_bot(bot, update):
-    chat_id = update.message.chat_id
-    first_name = update.message.chat.first_name
-    last_name = update.message.chat.last_name
-    username = update.message.chat.username
+    chat_id = bot.message.chat_id
+    first_name = bot.message.chat.first_name
+    last_name = bot.message.chat.last_name
+    username = bot.message.chat.username
     if bot.message.text.strip() == 'Отмена':
         start(bot, update)
         return ConversationHandler.END
@@ -77,8 +77,7 @@ def change_price_by_bot(bot, update):
     article = update.user_data['article'] 
     result = change_price.change_price(article, new_price)
     bot.message.reply_text(result)
-    update_google.update_table(article=article, new_price=new_price, user_id="chat_id : {} and firstname : {} lastname : {}  username {}". format(chat_id, first_name, last_name , username))
-    start(bot, update)
+    update_google.update_table(article=article, new_price=new_price, user_id=f"{first_name} {last_name} {username} {chat_id}")
     return ConversationHandler.END
 
 def cancel(bot, update):
