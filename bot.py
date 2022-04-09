@@ -6,6 +6,7 @@ from telegram import Bot, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import (CommandHandler, ConversationHandler, Filters,
                           MessageHandler, Updater)
 import change_price
+import update_google
 
 
 MAIN_MENU = (
@@ -32,6 +33,7 @@ load_dotenv()
 TOKEN = os.environ['TOKEN']
 bot: Bot = telegram.Bot(TOKEN)
 WHITELIST= os.environ['WHITELIST'].split(',')
+ID_FOR_LOGS= os.environ['ID_FOR_LOGS'].split(',')
 def start(bot: Bot, update):
     bot.message.reply_text('Главное меню', reply_markup=MAIN_MENU_MARKUP)
 
@@ -71,6 +73,8 @@ def change_price_by_bot(bot, update):
     article = update.user_data['article'] 
     result = change_price.change_price(article, new_price)
     bot.message.reply_text(result)
+    update_google.update_table(article=article, new_price=new_price, user_id=f'tg://user?id={bot["message"]["chat"]["id"]}'
+    bot.send_message()
     start(bot, update)
     return ConversationHandler.END
 
