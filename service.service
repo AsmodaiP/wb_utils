@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=root
 EnviromentFile=/etc/environment
-ExecStart=/home/asmodai/rocketbot/venv/bin/python bot.py
-ExecReload=/home/asmodai/rocketbot/venv/bin/python bot.py
-WorkingDirectory=/home/asmodai/rocketbot/
+ExecStart=/home/asmodai/wb_change_price/venv/bin/python bot.py
+ExecReload=/home/asmodai/wb_change_price/venv/bin/python bot.py
+WorkingDirectory=/home/asmodai/wb_change_price/
 KillMode=process
 Restart=always
 RestartSec=5
