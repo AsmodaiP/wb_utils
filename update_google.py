@@ -75,7 +75,3 @@ if __name__ == '__main__':
     cred_file = os.path.join(BASE_DIR, 'credentials.json')   
     with open(cred_file, 'r') as fp:
         cred = json.load(fp)
-        table_id ='
-        day = dt.datetime.now().day 
-        month = dt.datetime.now().month
-        update_table( table_id, 17290081, '222', 'user_id')
