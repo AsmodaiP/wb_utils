@@ -33,8 +33,10 @@ def change_price(article, new_price):
 
     current_price_info = get_info_current_price(article)
 
-    if  not validate_new_price(current_price_info['price'], new_price):
+    if  not validate_new_price(current_price_info['Цена после скидок'], new_price):
         return 'Несоответствие цены'
+
+    new_price = int((new_price/(1 - current_price_info['promoCode']*0.01))/(1-current_price_info['discount']*0.01))
     for name in CRED.keys():
         token = CRED[name]['token']
 
@@ -52,4 +54,4 @@ def change_price(article, new_price):
             return 'Цена изменена'
 
 # print(get_info_current_price(67937389))
-# print(change_price(67937389, 3095))
+# print(change_price(67937389, 2230))

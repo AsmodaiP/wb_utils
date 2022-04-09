@@ -64,13 +64,9 @@ def update_card(card, new_name):
 
 def update_card_by_imtID(imtID, new_name):
     print(new_name, imtID)
-    # try:
     card = get_card_by_imtID(int(imtID))
-    print(card)
-    # except:
-    #     return f'Не удалось получить карточку по imtID={imtID}'
     return update_card(card, new_name)
 
 
 
-print(update_card_by_imtID(26161227, 'Костюм женский спортивный / с шортами / летний / оверсайз /с велосипедками/домашний'))
+# print(update_card_by_imtID(26161227, 'Костюм женский спортивный / с шортами / летний / оверсайз /с велосипедками/домашний'))
