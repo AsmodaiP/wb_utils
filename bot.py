@@ -78,6 +78,7 @@ def change_price_by_bot(bot, update):
     result = change_price.change_price(article, new_price)
     bot.message.reply_text(result)
     update_google.update_table(article=article, new_price=new_price, user_id=f"{first_name} {last_name} {username} {chat_id}")
+    start(bot, update)
     return ConversationHandler.END
 
 def cancel(bot, update):
