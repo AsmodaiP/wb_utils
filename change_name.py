@@ -1,5 +1,3 @@
-from hashlib import new
-from lib2to3.pgen2 import token
 import requests
 
 
