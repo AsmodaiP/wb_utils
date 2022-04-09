@@ -16,6 +16,17 @@ import change_price
 MAIN_MENU = (
     [KeyboardButton('Поменять цену')],
 )
+
+CANCEL = (
+    [KeyboardButton('Отмена')],
+)
+
+
+CANCEL_MARKUP = ReplyKeyboardMarkup(
+    CANCEL,
+    resize_keyboard=True,
+    one_time_keyboard=True)
+
 MAIN_MENU_MARKUP = ReplyKeyboardMarkup(
     MAIN_MENU,
     resize_keyboard=True,
@@ -27,7 +38,7 @@ TOKEN = os.environ['TOKEN']
 bot: Bot = telegram.Bot(TOKEN)
 WHITELIST= os.environ['WHITELIST'].split(',')
 def start(bot: Bot, update):
-    bot.message.reply_text('sfsdf', reply_markup=MAIN_MENU_MARKUP)
+    bot.message.reply_text('Главное меню', reply_markup=MAIN_MENU_MARKUP)
 
 updater = Updater(token=TOKEN)
 
@@ -54,10 +65,13 @@ def get_current_info(bot, update):
         return ConversationHandler.END
     update.user_data['article'] = article
     bot.message.reply_text(f'Текущая цена {info["price"]},\n Cкидка {info["discount"]} \n Промокод {info["promoCode"]}')
-    bot.message.reply_text('Введите новую цену')
+    bot.message.reply_text('Введите новую цену или отмените операцию', reply_markup=CANCEL_MARKUP)
     return 'change_price'
 
 def change_price_by_bot(bot, update):
+    if bot.message.text.strip() == 'Отмена':
+        start(bot, update)
+        return ConversationHandler.END
     new_price = int(bot.message.text.strip())
     article = update.user_data['article'] 
     result = change_price.change_price(article, new_price)
