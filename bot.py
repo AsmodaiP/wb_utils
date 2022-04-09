@@ -71,6 +71,7 @@ def change_price_by_bot(bot, update):
     article = update.user_data['article'] 
     result = change_price.change_price(article, new_price)
     bot.message.reply_text(result)
+    start(bot, update)
     return ConversationHandler.END
 
 def cancel(bot, update):
