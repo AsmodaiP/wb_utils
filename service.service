@@ -1,13 +1,13 @@
 [Unit]
-Description=bot for rocket
+Description=bot add 
 After=network.target
 
 [Service]
 User=root
 EnviromentFile=/etc/environment
-ExecStart=/home/asmodai/wb_change_price/venv/bin/python bot.py
-ExecReload=/home/asmodai/wb_change_price/venv/bin/python bot.py
-WorkingDirectory=/home/asmodai/wb_change_price/
+ExecStart=/home/asmodai/pet-projects/financial/venv/bin/python bot.py
+ExecReload=/home/asmodai/pet-projects/financialvenv/bin/python bot.py
+WorkingDirectory=/home/asmodai/pet-projects/financial
 KillMode=process
 Restart=always
 RestartSec=5

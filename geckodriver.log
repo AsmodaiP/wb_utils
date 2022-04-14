@@ -1,0 +1,217 @@
+1649953243768	geckodriver	INFO	Listening on 127.0.0.1:56383
+1649953244302	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38919" "-no-remote" "-profile" "/tmp/rust_mozprofileILjeFB"
+*** You are running in headless mode.
+1649953244728	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileILjeFB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38919/devtools/browser/89475332-063d-4e21-a522-6fd8a3cc63b3
+1649953245994	Marionette	INFO	Listening on port 34673
+Read port: 34673
+1649953246021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+1649953260730	Marionette	INFO	Stopped listening on port 34673
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649953711312	geckodriver	INFO	Listening on 127.0.0.1:54213
+1649953711841	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "52821" "-no-remote" "-profile" "/tmp/rust_mozprofilerSfueK"
+*** You are running in headless mode.
+1649953712217	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerSfueK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52821/devtools/browser/0c215fd5-92f6-4d12-bcda-574a645c2c4b
+1649953713612	Marionette	INFO	Listening on port 39375
+Read port: 39375
+1649953713659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1649953728773	Marionette	INFO	Stopped listening on port 39375
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649953885059	geckodriver	INFO	Listening on 127.0.0.1:35851
+1649953885586	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46881" "-no-remote" "-profile" "/tmp/rust_mozprofilef2qwFl"
+*** You are running in headless mode.
+1649953885976	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef2qwFl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46881/devtools/browser/78e23017-b782-49c5-8739-e648deb37899
+1649953887313	Marionette	INFO	Listening on port 39167
+Read port: 39167
+1649953887425	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1649953898340	Marionette	INFO	Stopped listening on port 39167
+1649953939729	geckodriver	INFO	Listening on 127.0.0.1:58627
+1649953940245	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "49211" "-no-remote" "-profile" "/tmp/rust_mozprofile6j4ZQS"
+*** You are running in headless mode.
+1649953940828	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6j4ZQS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49211/devtools/browser/a190d0e4-633c-47a0-970a-dda3dab2ac04
+1649953942451	Marionette	INFO	Listening on port 36841
+Read port: 36841
+1649953942622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+1649953957698	Marionette	INFO	Stopped listening on port 36841
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649954037211	geckodriver	INFO	Listening on 127.0.0.1:48619
+1649954037735	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55755" "-no-remote" "-profile" "/tmp/rust_mozprofileMPGOC5"
+*** You are running in headless mode.
+1649954038065	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMPGOC5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55755/devtools/browser/e0cc3688-1e76-4910-890c-5709e932c2ca
+1649954039323	Marionette	INFO	Listening on port 37987
+Read port: 37987
+1649954039364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+1649954057822	Marionette	INFO	Stopped listening on port 37987
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649954091192	geckodriver	INFO	Listening on 127.0.0.1:59835
+1649954091725	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "51473" "-no-remote" "-profile" "/tmp/rust_mozprofileIf62ah"
+*** You are running in headless mode.
+1649954092142	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIf62ah/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51473/devtools/browser/9fa509ec-23ac-4055-914e-8228e1a05bb7
+1649954093301	Marionette	INFO	Listening on port 41825
+Read port: 41825
+1649954093342	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1649954111178	Marionette	INFO	Stopped listening on port 41825
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649954122293	geckodriver	INFO	Listening on 127.0.0.1:58707
+1649954122811	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53221" "-no-remote" "-profile" "/tmp/rust_mozprofilenQGrWG"
+*** You are running in headless mode.
+1649954123197	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenQGrWG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53221/devtools/browser/bc285fce-8e09-4b96-8fe6-ea053987db02
+1649954124825	Marionette	INFO	Listening on port 42547
+Read port: 42547
+1649954124929	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1649954136901	Marionette	INFO	Stopped listening on port 42547
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649954285858	geckodriver	INFO	Listening on 127.0.0.1:35721
+1649954286391	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "33967" "-no-remote" "-profile" "/tmp/rust_mozprofileSwioih"
+*** You are running in headless mode.
+1649954286808	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSwioih/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33967/devtools/browser/5dfce7ef-59b1-449f-8d2d-4bf81d653012
+1649954288016	Marionette	INFO	Listening on port 39033
+Read port: 39033
+1649954288118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649954304304	Marionette	INFO	Stopped listening on port 39033
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649954313402	geckodriver	INFO	Listening on 127.0.0.1:36879
+1649954313906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50443" "-no-remote" "-profile" "/tmp/rust_mozprofileOoH3LO"
+*** You are running in headless mode.
+1649954314261	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOoH3LO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50443/devtools/browser/10d70146-cf17-4104-ad3d-0c46bfb45407
+1649954315556	Marionette	INFO	Listening on port 39521
+Read port: 39521
+1649954315623	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+1649954330098	Marionette	INFO	Stopped listening on port 39521
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1649954350779	geckodriver	INFO	Listening on 127.0.0.1:52407
+1649954351305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38029" "-no-remote" "-profile" "/tmp/rust_mozprofilets2pn3"
+*** You are running in headless mode.
+1649954351705	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilets2pn3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38029/devtools/browser/ecf48c2e-0250-413c-a803-5ceae253339d
+1649954352878	Marionette	INFO	Listening on port 41675
+Read port: 41675
+1649954352925	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://static.wbstatic.net/j/spa/index.min.js?244ce2f51c9747cf, line 158: Error: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1649954368791	Marionette	INFO	Stopped listening on port 41675
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
