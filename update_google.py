@@ -16,10 +16,9 @@ SERVICE_ACCOUNT_FILE = os.path.join(BASE_DIR, 'credentials_service.json')
 credentials = service_account.Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 START_POSITION_FOR_PLACE = 15
+dotenv_path = os.path.join(BASE_DIR, '.env')
 
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-
-SPREADSHEET_ID = os.getenv('SPREADSHEET_ID', None)
+SPREADSHEET_ID = os.getenv('SPREADSHEET_ID', '1m_IcullUpEP4yOOnOH7ojBzbPpn38tFtVNyS40yKJjQ')
 if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 load_dotenv('~/wb_fbs/.env ')
@@ -39,8 +38,9 @@ def convert_to_column_letter(column_number):
         column_number = (column_number - c) // 26
     return column_letter
 
-def update_table(table_id='1m_IcullUpEP4yOOnOH7ojBzbPpn38tFtVNyS40yKJjQ', article=0, new_price=0, user_id=0):
+def update_table(table_id=SPREADSHEET_ID, article=0, new_price=0, user_id=0):
     range_name = 'Изменения цены'
+    range_name_of_month = dt.datetime.now().strftime('%m.%Y')
 
     service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
@@ -65,13 +65,26 @@ def update_table(table_id='1m_IcullUpEP4yOOnOH7ojBzbPpn38tFtVNyS40yKJjQ', articl
         body = {
             'valueInputOption': 'USER_ENTERED',
             'data': body_data}
-        print(body)
-        sheet.values().batchUpdate(spreadsheetId=table_id, body=body).execute()
+
+    result = sheet.values().get(spreadsheetId=table_id,
+                                range=range_name_of_month, majorDimension='ROWS').execute()
+    values = result.get('values', [])
+    i = 1
+    position_for_place = START_POSITION_FOR_PLACE + (int(dt.datetime.now().day) - 1) * 6 + 4
+    for row in values:
+        try:
+            article_from_table = int(row[7])
+            if article_from_table == article:
+                body_data += [{'range': f'{range_name_of_month}!{convert_to_column_letter(position_for_place)}{i}', 'values': [[f'{new_price}{user_id.split(" ")[0]}']]}]
+
+        except Exception as e:
+            logging.error('Ошибка', e, exc_info=True)
+        finally:
+            i+=1
+
+    sheet.values().batchUpdate(spreadsheetId=table_id, body=body).execute()
 
 
 
 if __name__ == '__main__':
-    
-    cred_file = os.path.join(BASE_DIR, 'credentials.json')   
-    with open(cred_file, 'r') as fp:
-        cred = json.load(fp)
+    pass
