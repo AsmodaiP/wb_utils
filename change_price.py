@@ -43,7 +43,7 @@ def change_price(article, new_price, chat_id):
                      current_price_info['discount'] *
                      0.01))
     if not validate_new_price(current_price_info['price'], new_price) and chat_id != 172902983:
-        return 'Попытка изменить цену на слишком высокую'
+        return 'Попытка изменить цену на слишком низкую.'
     for name in CRED.keys():
         token = CRED[name]['token']
 
@@ -58,6 +58,8 @@ def change_price(article, new_price, chat_id):
         ]
         response = requests.post(url, headers=headers, json=json_data)
         if response.status_code == 200:
-            return f'Цена изменена, новая окончательная цена {new_price*(1-current_price_info["discount"]*0.01) * (1- current_price_info["promoCode"]*0.01)} Запрос {json.dumps(json_data)}'
+            return f'Цена изменена, \n артикул {article} \nстарая цена -- {current_price_info["Цена после скидок"]} \n новая окончательная цена  -- {new_price*(1-current_price_info["discount"]*0.01) * (1- current_price_info["promoCode"]*0.01)} \n Запрос`{json.dumps(json_data)}`'
+
+
 if __name__ == '__main__':
     print(get_info_current_price(74771522))

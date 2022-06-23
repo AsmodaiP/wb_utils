@@ -121,8 +121,8 @@ def change_price_by_bot(bot, update):
     update.user_data['article'] = None
     update.user_data['new_price'] = None
     bot.message.reply_text(result)
-    bot.send_message(chat_id=-732179382,
-                     text=f'Операция завершена. Пользователь {first_name} {last_name} (@{username}), результат: {result}')
+    bot1.send_message(chat_id=-732179382,
+                     text=f'Пользователь {first_name} {last_name} (@{username}), результат:\n {result}')
     update_google.update_table(
         article=article,
         new_price=new_price,
