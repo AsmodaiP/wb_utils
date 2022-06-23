@@ -58,7 +58,7 @@ def change_price(article, new_price, chat_id):
         ]
         response = requests.post(url, headers=headers, json=json_data)
         if response.status_code == 200:
-            return f'Цена изменена, новая окончательная цена {new_price*(1-current_price_info["discount"]*0.01) * (1- current_price_info["promoCode"]*0.01)} Запрос {json.dumps(json_data)}'
+            return f'Цена изменена, артикул {article} старай цена {current_price_info["Цена после скидок"]}  новая окончательная цена {new_price*(1-current_price_info["discount"]*0.01) * (1- current_price_info["promoCode"]*0.01)} Запрос {json.dumps(json_data)}'
 
 
 if __name__ == '__main__':
