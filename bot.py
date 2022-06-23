@@ -117,7 +117,7 @@ def change_price_by_bot(bot, update):
         return ConversationHandler.END
     new_price = int(bot.message.text.strip())
     article = update.user_data['article']
-    result = change_price.change_price(article, new_price)
+    result = change_price.change_price(article, new_price, chat_id)
     update.user_data['article'] = None
     update.user_data['new_price'] = None
     bot.message.reply_text(result)
