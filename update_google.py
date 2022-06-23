@@ -75,7 +75,7 @@ def update_table(table_id=SPREADSHEET_ID, article=0, new_price=0, user_id=0):
         try:
             article_from_table = int(row[7])
             if article_from_table == article:
-                body_data += [{'range': f'{range_name_of_month}!{convert_to_column_letter(position_for_place)}{i}', 'values': [[f'{new_price}{user_id.split(" ")[0]}']]}]
+                body_data += [{'range': f'{range_name_of_month}!{convert_to_column_letter(position_for_place)}{i}', 'values': [[f'{new_price} {user_id.split(" ")[0]}']]}]
 
         except Exception as e:
             logging.error('Ошибка', e, exc_info=True)
