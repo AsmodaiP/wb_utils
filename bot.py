@@ -62,9 +62,10 @@ def log_message_wrapper(func, *args, **kwargs):
         last_name = bot.message.chat.last_name
         username = bot.message.chat.username
         text = bot.message.text
-        func(bot, update)
+        result = func(bot, update)
         bot1.send_message(chat_id=1126541068,
                           text=f'Пользователь {first_name} {last_name} (@{username}), сообщение: {text}')
+        return result
     return wrapper
 
 
