@@ -57,3 +57,5 @@ def change_price(article, new_price):
         response = requests.post(url, headers=headers, json=json_data)
         if response.status_code == 200:
             return f'Цена изменена, новая окончательная цена {new_price*(1-current_price_info["discount"]*0.01) * (1- current_price_info["promoCode"]*0.01)} Запрос {json.dumps(json_data)}'
+        else:
+            return f'Ошибка при изменении цены, запрос {json.dumps(json_data)}'
