@@ -95,7 +95,7 @@ def get_name_by_article(article):
                 if element['type'] == 'Наименование':
                     return element['params'][0]['value']
         except Exception as e:
-
+            pass
 
 if __name__ == '__main__':
     pass
