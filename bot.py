@@ -98,8 +98,10 @@ def get_current_info(bot, update):
         bot.message.reply_text('Артикул не найден')
         return ConversationHandler.END
     update.user_data['article'] = article
+    name = change_price.get_name_by_article(article)
+    inside_article = change_price.get_inside_article(article)
     bot.message.reply_text(
-        f'Текущая цена {info["price"]},\n Cкидка {info["discount"]} \n Промокод {info["promoCode"]} \n Окончательная цена {info["Цена после скидок"]}')
+        f'{name} \n{inside_article}\nТекущая цена {info["price"]},\n Cкидка {info["discount"]} \n Промокод {info["promoCode"]} \n Окончательная цена {info["Цена после скидок"]}')
     bot.message.reply_text(
         'Введите новую цену или отмените операцию',
         reply_markup=CANCEL_MARKUP)
@@ -121,8 +123,6 @@ def change_price_by_bot(bot, update):
     update.user_data['article'] = None
     update.user_data['new_price'] = None
     bot.message.reply_text(result)
-#    bot1.send_message(chat_id=-732179382,
- #                    text=f'Пользователь {first_name} {last_name} (@{username}), результат:\n {result}')
     update_google.update_table(
         article=article,
         new_price=new_price,
